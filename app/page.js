@@ -1,4 +1,4 @@
-"use client"; // Indica que este é um Client Component
+"use client"; 
 
 import { useState } from 'react';
 import { TextField, Button, Container, Typography, Paper, Box } from '@mui/material';
@@ -9,7 +9,7 @@ export default function Login() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Lógica de autenticação aqui
+
     console.log('Email:', email);
     console.log('Password:', password);
   };
@@ -24,8 +24,8 @@ export default function Login() {
         justifyContent: 'center',
         alignItems: 'center',
         height: '100vh',
-        bgcolor: '#000000', // Fundo preto
-        padding: 0, // Remove padding do container
+        bgcolor: '#000000', 
+        padding: 0, 
       }}
     >
       <Paper 
@@ -33,7 +33,7 @@ export default function Login() {
         sx={{ 
           padding: 4, 
           borderRadius: 3, 
-          bgcolor: '#ffffff' // Fundo branco do Paper
+          bgcolor: '#ffffff'
         }}
       >
         <Typography variant="h4" align="center" sx={{ mb: 2 }}>
@@ -54,7 +54,7 @@ export default function Login() {
               autoComplete="email"
               autoFocus
               variant="outlined"
-              sx={{ bgcolor: '#e3f2fd' }} // Fundo suave para o campo
+              sx={{ bgcolor: '#e3f2fd' }} 
             />
           </Box>
           <Box mb={2}>
@@ -68,7 +68,7 @@ export default function Login() {
               onChange={(e) => setPassword(e.target.value)}
               autoComplete="current-password"
               variant="outlined"
-              sx={{ bgcolor: '#e3f2fd' }} // Fundo suave para o campo
+              sx={{ bgcolor: '#e3f2fd' }}
             />
           </Box>
           <Button
